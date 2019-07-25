@@ -1,0 +1,78 @@
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+body{
+	background-color : rgb(100,100,255);
+	font-family: 'helvetica Neue';
+}
+#Title {
+	position: relative;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	text-align: center;
+	width: 850px;
+	border: 1px solid black;
+	background-color: white;
+	padding-top: 20px;
+	padding-right:100px;
+	padding-left:100px;
+	padding-bottom: 20px;
+	left: 386.5px;
+}
+div.Main{
+	position: relative;
+	border: 1px solid black;
+	background-color: white;
+	padding-top: 25px;
+	/*fix this when you add more*/
+	padding-bottom:75px;
+	width: 1052px;
+	left: 386.5px;	
+}
+div#PicMe {
+	text-align: center;
+}
+.text {
+	text-align : center;
+}
+
+#List {
+	position: relative;
+	left: 300px;
+}
+
+div#Contact_me{
+	width:370px;
+	height:200px;
+	background-color: orange;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: pointer;
+	color: white;
+}
+
+div#Contact_me:before, div#Contact_me:after {
+	font-family: 'Ionicons';
+	content: 'Contact Me!';
+	position: absolute; 
+	font-size: 25px;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s;
+}
+
+div#Contact_me:hover:after {
+	top:-50%;
+}
+
+div#Contact_me:before{
+	content: "\f2eb";
+	font-size: 100px;
+	top: 190%; 
+}
+
+div#Contact_me:hover:before{
+	top:50%;
+}
